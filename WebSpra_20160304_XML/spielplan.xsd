@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+	xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/spielplan"
+	xmlns:tns="http://www.example.org/spielplan"
+	elementFormDefault="qualified">
+
+    <element name="spielplan" type="tns:spielplan"></element>
+    
+    <complexType name="spielplan">
+    	<sequence>
+    		<element name="feld" type="tns:feld" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="feld">
+    	<sequence>
+    		<element name="image" type="tns:image"></element>
+    	</sequence>
+    	<attribute name="x" type="integer"></attribute>
+    	<attribute name="y" type="integer"></attribute>
+    	<attribute name="type" type="string"></attribute>
+    </complexType>
+
+    <complexType name="image">
+    	<attribute name="src" type="string"></attribute>
+    </complexType>
+</schema>

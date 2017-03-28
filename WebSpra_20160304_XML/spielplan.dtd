@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT spielplan (feld*)>
+<!ELEMENT feld (#PCDATA | bild)*>
+<!ELEMENT bild EMPTY>
+
+<!ATTLIST feld
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	type CDATA #IMPLIED
+>
+<!ATTLIST bild
+	src CDATA #REQUIRED
+>
+
+<!ENTITY copyright "Copyright by Andreas Dietler">
