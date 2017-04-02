@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE demo [
+	<!ELEMENT demo (wasichwill*)>
+	<!ELEMENT wasichwill (#PCDATA)>
+		<!ATTLIST wasichwill aso (0|1) #IMPLIED> <!-- Mit (0|1) können die Werte für das Attribut definiert werden -->
+	<!ENTITY copyright "Copyright by me">
+]>
+
+<demo>
+	<wasichwill aso="1">
+		&gt;TEST&lt;
+	</wasichwill>
+</demo>
